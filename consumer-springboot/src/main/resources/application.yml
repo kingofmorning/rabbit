@@ -1,0 +1,18 @@
+# 配置RabbitMQ的基本信息  ip 端口 username  password..
+spring:
+  rabbitmq:
+    #host: 192.168.23.129 # ip
+    host: 127.0.0.1 # ip
+    port: 5672
+    username: heima
+    password: heima
+    virtual-host: /itcast
+    listener:
+      simple:
+        concurrency: 10  #并发消费者的初始化值
+        max-concurrency: 20 #并发消费者的最大值
+        prefetch: 5 #每个消费者每次监听时可拉取处理的消息数量
+        acknowledge-mode: manual # 开启消息消费手动确认
+
+
+

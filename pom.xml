@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.itheima</groupId>
+    <artifactId>rabbitmq</artifactId>
+    <version>1.0-SNAPSHOT</version>
+<packaging>pom</packaging>
+
+    <modules>
+        <module>consumer-springboot</module><!--srpingboot 整合rabbitmq-->
+        <module>producer-springboot</module>
+        <module>rabbitmq-consumer</module><!--工作模式-->
+        <module>rabbitmq-producer</module>
+        <module>rabbitmq-consumer-spring</module><!--确认模式生产消费  限流 死信 延迟-->
+        <module>rabbitmq-producer-spring</module>
+        <module>spring-rabbitmq-consumers</module><!--spring集成 rabbitmq 配置-->
+        <module>spring-rabbitmq-producers</module>
+    </modules>
+</project>
